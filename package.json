@@ -9,7 +9,7 @@
 		"build:dev": "env NODE_ENV=development npm run build",
 		"build": "npx webpack",
 		"eslint": "npx eslint ./src/*.jsx ./src/**/*.jsx ./src/**/*.js *.js",
-		"watch": "npm run build:dev -- -- serve",
+		"watch": "env NODE_ENV=development npx webpack-dev-server",
 		"eslint:fix": "npm run eslint -- --fix"
 	},
 	"author": "G lander",
